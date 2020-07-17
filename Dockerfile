@@ -10,4 +10,6 @@ CMD ["scl", "enable", "rh-ruby25", "./run.sh"]
 
 USER root
 RUN chmod og+rw /opt/app-root/src/db
+RUN touch /tmp/edit-file
+RUN rm /tmp/edit-file
 USER default
